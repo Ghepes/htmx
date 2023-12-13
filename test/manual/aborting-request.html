@@ -23,6 +23,8 @@
     var checkbox = document.querySelector('input');
     var target = document.querySelector('#target');
 
+   
+
     btn.addEventListener('htmx:beforeRequest', function(e) {
       var messages = target.innerHTML;
       target.innerHTML = messages + "<p>Another Message!</p>";
